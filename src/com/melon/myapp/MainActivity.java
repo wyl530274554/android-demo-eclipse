@@ -11,13 +11,14 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
+import com.melon.myapp.functions.beacon.ShowBeaconsActivity;
 import com.melon.myapp.functions.sensor.ShakeOneShakeActivity;
 import com.melon.myapp.functions.wifi.ShowWifiInfoActivity;
 import com.melon.myapp.util.ToastUtil;
 import com.melon.myapp.util.ViewHolder;
 
 public class MainActivity extends Activity {
-	private String[] items = new String[] { "查看Wifi列表", "摇一摇" };
+	private String[] items = new String[] { "查看Wifi列表", "摇一摇" ,"Beacon"};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,10 @@ public class MainActivity extends Activity {
 				case 1:
 					// 摇一摇
 					enterActivity(ShakeOneShakeActivity.class);
+					break;
+				case 2:
+					//beacon
+					enterActivity(ShowBeaconsActivity.class);
 					break;
 				}
 			}
