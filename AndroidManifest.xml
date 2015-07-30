@@ -33,6 +33,7 @@
         <activity android:name=".functions.wifi.ShowWifiInfoActivity" />
         <activity android:name=".functions.sensor.ShakeOneShakeActivity" />
         <activity android:name=".functions.beacon.ShowBeaconsActivity" />
+        <activity android:name=".functions.screen.PhoneDensityActivity" />
     </application>
 
 </manifest>
